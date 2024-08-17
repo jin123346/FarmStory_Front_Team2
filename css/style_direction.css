@@ -273,9 +273,10 @@ aside > article{
     top: 25px;
 }
 .a_top_tit{
-  
-    font-size: 25px;
+    justify-content: flex-end;
+    margin-bottom: 2px;
     line-height: 50px;
+    bottom: 0px;
 } 
 
 .a_top .sub_utill{
