@@ -109,8 +109,6 @@ header .gnb > li >a{
 
 }
 
-
-
 header .gnb li:nth-child(2){
     box-sizing: border-box;
     position: relative;
