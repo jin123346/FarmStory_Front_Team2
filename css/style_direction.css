@@ -140,7 +140,7 @@ main > section{
 }
 
 main article:nth-child(1){
-    height: 184px;
+    height: 650px;
 }
 
 main > .sub_bg {
@@ -150,7 +150,7 @@ main > .sub_bg {
     margin: 0 auto;
     z-index: 1;
 }
-main > .sub_bg img{
+main > .sub_bg imsg{
     box-sizing: border-box;
     background-attachment: fixed;
     position: relative
@@ -192,7 +192,7 @@ aside > article{
     height: 650px;
     background: url(../images/sub_aside_bg_line.png) no-repeat ;
     background-position: right;
-    /* background-position-y: 40px; */
+    background-position-y: 40px;
 }
 .sub_tit img{
     box-sizing: border-box;
@@ -283,7 +283,7 @@ aside > article{
 .a_top .sub_utill{
     position: absolute;
     box-sizing: border-box;
-    width: 780px;
+    width: 250px;
     height: 14px;
     font-style: normal;
     font-weight: 400;
@@ -292,7 +292,7 @@ aside > article{
     display: inline-block;
     align-self: flex-start;
     justify-content: end;
-
+    margin-left: 27px;
 }
 
 .a_top .sub_utill{
@@ -305,7 +305,6 @@ aside > article{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding-right: 15px;
     white-space: nowrap; /* Prevent text from wrapping */
 }
 
@@ -322,56 +321,19 @@ aside > article{
 .sub_utill li:last-child:after {
     content: "";
 }
-/* gpt */
-/* article */
-/* article */
-/* #article {
-    box-sizing: border-box;
-    width: 780px;
-    height: auto;
-    margin-top: 14px;
-    padding-left: 60px;
+
+
+#article ul > li:nth-child(1) {
+    margin-top: 40px;
 }
 
-#article > div:nth-child(1) {
-    width: auto;
-    border-bottom: 1px solid #cacaca;
-    
+#article ul > li:nth-child(2) {
+    margin-top: 20px;
 }
-
-.a_top {
-    display: flex;
-    justify-content: space-between;
-    align-items: start; /* This aligns the items vertically in the center 
-    height: 50px;
-    box-sizing: border-box;
-}
-
-.a_top_tit {
-    font-size: 25px;
-    line-height: 50px;
-    font-weight: bold;
-    align-items: start;
-}
-
-.sub_utill {
-    box-sizing: border-box;
-    font-weight: 400;s
-    font-size: 12px;
-    line-height: 50px; /* Match this with the height to vertically center align 
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding-right: 15px; /* Add some padding to adjust spacing if needed 
-
-.sub_utill li {
-    margin-right: 5px;
-} 
-*/
 
 
 .direction.txt1 {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
     margin-bottom: 10px;
     color: #99ba24;
@@ -384,4 +346,54 @@ aside > article{
 }
 
 
+/* footer  */
+footer{
+    width: 100%;
+    height: auto;
+    margin-top: 20;
+}
 
+.footerIn{
+    width: 980px;
+    height: 130px;
+    margin: 0 auto;
+}
+
+.footerIn *{
+    display: inline;
+    font-size: 12px;
+
+}
+
+.ceoft{
+   display: block;
+
+}
+
+.companyft li::after{
+    content: " /";
+
+}
+.companyft li:last-child::after{
+    content: "";
+}
+
+.ceoft li::after{
+    content: " /";
+}
+.ceoft li:last-child:after{
+    content: "";
+}
+
+
+
+
+
+/* copyright */
+.Copy {
+    text-align: center; /* Center align the copyright text */
+    padding-top: 20px; /* Padding for the top */
+    font-size: 12px; /* Font size */
+    color: #777; /* Text color */
+    font-weight: bold;
+}
