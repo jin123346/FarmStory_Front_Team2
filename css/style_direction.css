@@ -227,15 +227,13 @@ aside > article{
     height: 29px;
 }
 .aside_container .greeting:hover{
-    
     content: url(../images/sub_cate1_lnb1_ov.png);
     z-index: 2;
     background-position: top;
 }
 
 
-.aside_container .dirction:hover{
-    
+.aside_container a:nth-of-type(2):hover{
     content: url(../images/sub_cate1_lnb2_ov.png);
     z-index: 2;
     background-position: top;
@@ -353,10 +351,17 @@ footer{
     margin-top: 20;
 }
 
+footer .ftlogo {
+   float: left;
+   margin-right: 70px;
+}
+
 .footerIn{
     width: 980px;
     height: 130px;
     margin: 0 auto;
+    background: url(../images/footer_top_line.png) no-repeat;
+    background-position: top;
 }
 
 .footerIn *{
@@ -365,9 +370,19 @@ footer{
 
 }
 
+.companyft {
+    display: block;
+    padding-top: 27px;
+}
+
 .ceoft{
    display: block;
 
+}
+
+.Copy{
+    display: block;
+    padding-top: 0px;
 }
 
 .companyft li::after{
@@ -391,8 +406,8 @@ footer{
 
 /* copyright */
 .Copy {
-    text-align: center; /* Center align the copyright text */
-    padding-top: 20px; /* Padding for the top */
+    text-align: justify;
+    padding-left: 243px; 
     font-size: 12px; /* Font size */
     color: #777; /* Text color */
     font-weight: bold;
