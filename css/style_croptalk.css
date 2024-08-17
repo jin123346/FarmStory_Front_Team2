@@ -150,7 +150,7 @@ main > .sub_bg {
     margin: 0 auto;
     z-index: 1;
 }
-main > .sub_bg img{
+main > .sub_bg {
     box-sizing: border-box;
     background-attachment: fixed;
     position: relative
@@ -161,7 +161,7 @@ main .croptalk{
     z-index: 2;    
     background-attachment: fixed;
     left: 10px;
-    bottom: 47px;
+    bottom: 10px;
     box-sizing: border-box;
 }
 

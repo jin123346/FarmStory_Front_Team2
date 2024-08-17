@@ -150,7 +150,7 @@ main > .sub_bg {
     margin: 0 auto;
     z-index: 1;
 }
-main > .sub_bg imsg{
+main > .sub_bg {
     box-sizing: border-box;
     background-attachment: fixed;
     position: relative
