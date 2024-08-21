@@ -1,0 +1,487 @@
+* {
+    margin: 0;
+    padding: 0;      
+    box-sizing: border-box;      
+}
+
+ul, ol {list-style: none;}
+a {text-decoration: none; color: #111;}
+
+
+
+#header {
+    width: 980px;
+    height: 142px;
+    background-image: url(../images/head_top_line.png);
+    background-repeat: no-repeat;   
+    margin: 0 auto;
+    position: relative;
+}
+
+.logo img {
+    width: 190px;
+    height: 64px;
+    margin-top: 20px;
+    margin-left: 395px; 
+}
+
+.utill {
+    display: flex; /* 항목들을 가로로 배치 */
+    margin-left: 787.45px;
+    position: absolute;
+    top: 17px;
+    box-sizing: border-box;
+}
+
+.utill li {
+    margin-right: 2px; /* 항목들 사이의 간격 */
+}
+
+.utill li:not(:last-child)::after {
+    content: "|"; /* 구분자 추가 */
+    margin-left: 2px; /* 구분자와 링크 간격 */
+    color: black; /* 구분자 색상 */
+}
+
+.utill a {
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.52px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.utill li:last-child {
+    margin-right: 0; /* 마지막 항목의 오른쪽 여백 제거 */
+}
+
+.h_txt img {
+    width: 229px;
+    height: 15px;
+    position: absolute;
+    top: 59px;
+    left: 751px;
+}
+
+.gnb {
+    display: flex;
+    width: 980px;
+    height: 50px;
+    top: 92px;
+}
+
+.gnb > li {
+    width: 196px;
+    height: 50px;
+    background-image: url(../images/head_menu_line.png);
+    background-repeat: no-repeat;   
+}
+
+.gnb img {
+    margin-top: 12px;
+}
+
+.gnb > li:nth-child(2) {
+    position: relative;
+}
+
+.gnb > li:nth-child(2) > img {
+    width: 37px;
+    height: 34px;
+    position: absolute;
+    left: 98px;
+    top: -22px; 
+}
+
+/* main */
+#main {
+    width: 100%;
+    height: auto;
+
+}
+
+.mainIn {
+    width: 980px;
+    height: 758px;
+    top: 326px;
+    left: 470px;
+    margin: 0 auto;
+}
+
+.sub_bg {
+    background: url("../images/sub_top_bg.jpg") no-repeat;
+    width: 980px;
+    height: 184px;
+    top: 142px;
+    left: 470px;
+}
+
+.sub_bg > img {
+    width: 186px;
+    height: 37px;
+    margin-top: 137px;
+    margin-left: 10px;
+
+}
+
+.sidebar {
+    width: 176px;
+    height: 650px;
+    background: url("../images/sub_aside_bg_line.png") no-repeat right;
+}
+
+.sidebar > nav > h2 > img {
+    width: 103px;
+    height: 45px;
+    margin-top: 16px;
+    margin-left: 16px;
+}
+
+.sidebar > nav {
+    position: relative;
+}
+
+.sidebar > nav > img:nth-of-type(2) {
+    width: 175px;
+    height: 233px;
+    margin-top: 20px;
+}
+
+.sidebar > nav > ul img {
+    width: 175px;
+    height: 29px;
+    position: absolute;
+    top: 107px;
+}
+
+.article {
+    width: 802px;
+    height: 2095px;
+    margin-left: 176px;
+    position: absolute;
+    top: 326px;
+}
+
+.article > nav {
+    width: 762px;
+    height: 72px;
+    margin-left: 40px;
+    border-bottom: 1px solid #C2C2C2;
+}
+
+.article > nav > h2 > img {
+    width: 69px;
+    height: 24px;
+    margin-top: 43px;
+}
+
+.root {
+    width: 152.88px;
+    height: 17px;
+    margin-top: 0px;
+    left: 609.13px;
+    display: flex;
+    background: url("../images/sub_page_nav_ico.png") no-repeat right;
+}
+
+.root {
+    display: flex; /* 항목들을 가로로 배치 */
+    width: 152.88px;
+    height: 17px;
+    position: absolute;
+    top: 45px;
+    left: 609.13px;
+
+}
+
+
+.root li:not(:last-child)::after {
+    content: ">"; /* 구분자 추가 */
+    margin-left: 2px; /* 구분자와 링크 간격 */
+}
+
+.root a:nth-of-type(1), .root a:nth-of-type(2){
+    width: 152.88px;
+    height: 17px;
+    top: 50px;
+    left: 609.13px;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.52px;
+    text-align: left;
+}
+
+.root a:nth-of-type(3){
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14.52px;
+    text-align: left;
+}
+
+.article h3:nth-of-type(1) {
+    width: 64.2px;
+    height: 17px;
+    position: absolute;
+    top: 113px;
+    left: 40px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.36px;
+    text-align: left;
+}
+
+.product_info {
+    width: 762px;
+    height: 270px;
+    position: absolute;
+    top: 143px;
+    margin-left: 40px;
+
+}
+
+.product_info > img {
+    width: 240px;
+    height: 240px;
+
+}
+
+.product_details > table{
+    width: 457.19px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    margin-left: 304.81px;
+    border-top: 2px solid #E7E7E7;
+    border-bottom: 2px solid #E7E7E7;
+}
+
+.product_details > table tr {
+    width: 453.19px;
+    height: 29.75px;
+
+}
+
+.product_details > table th {
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.52px;
+    text-align: left;
+
+}
+
+.product {
+    font-family: Inter;
+    font-size: 11.06px;
+    font-weight: 400;
+    line-height: 13.39px;
+    text-align: left;
+
+}
+
+.deliver {
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.52px;
+    text-align: left;
+
+}
+
+.sell_price {
+    font-family: Inter;
+    font-size: 10.69px;
+    font-weight: 400;
+    line-height: 12.93px;
+    text-align: left;
+
+}
+
+.count > input {
+    width: 64px;
+    height: 19px;
+    border-radius: 2.5px 2.5px 2.5px 2.5px;
+    border: 1px 0px 0px 0px;
+    border: 1px solid #767676;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.52px;
+    text-align: left;
+}
+
+.sum {
+    font-family: Inter;
+    font-size: 9.94px;
+    font-weight: 700;
+    line-height: 12.03px;
+    text-align: left;
+    color: #C20A0A;
+
+}
+
+.add_to_cart {
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    top: 210px;
+    left: 559px;
+    background: #769B0A;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+.buy_now {
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    top: 210px;
+    left: 662px;
+    background: #960D1A;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+
+.article h3:nth-of-type(2) {
+    width: 64.2px;
+    height: 17px;
+    position: absolute;
+    top: 424px;
+    left: 40px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.36px;
+    text-align: left;
+    
+}
+
+.sample > img {
+    width: 750px;
+    height: 1387px;
+    position: absolute;
+    top: 454px;
+    left: 40px;
+}
+
+.article h3:nth-of-type(3) {
+    width: 64.2px;
+    height: 17px;
+    position: absolute;
+    top: 1856px;
+    left: 40px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.36px;
+    text-align: left;
+}
+
+.article p:nth-of-type(1) {
+    width: 450px;
+    height: 14px;
+    position: absolute;
+    top: 1887px;
+    left: 40px;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.52px;
+    text-align: left;
+}
+
+.article h3:nth-of-type(4) {
+    width: 74px;
+    height: 17px;
+    position: absolute;
+    top: 1914px;
+    left: 40px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.36px;
+    text-align: left;
+    
+}
+
+.table_change {
+    width: 762px;
+    height: 150px;
+    position: absolute;
+    top: 1944.5px;
+    left: 40px;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.table_change tr:nth-of-type(1) > th {
+    width: 217.42px;
+    height: 93px;
+    border: 1px 1px 1px 0px;
+    border-width: 1px, 1px, 1px, 0px;
+    border-style: solid;
+    border-color: #CCCCCC;
+    border-left: none; 
+}
+
+.table_change tr:nth-of-type(1) > td {
+    width: 544.58px;
+    height: 93px;
+    left: 217.42px;
+    padding: 10.5px 10px 10.5px 10.5px;
+    border: 1px 0px 1px 1px;
+    border-width: 1px, 0px, 1px, 1px;
+    border-style: solid;
+    border-color: #CCCCCC;
+    border-right: none; 
+    padding-left: 24px;
+}
+
+.table_change tr:nth-of-type(2) > th {
+    width: 217.42px;
+    height: 57px;
+    border: 1px 1px 1px 0px;
+    border-width: 1px, 1px, 1px, 0px;
+    border-style: solid;
+    border-color: #CCCCCC;
+    border-left: none; 
+}
+
+.table_change tr:nth-of-type(2) > td {
+    width: 544.58px;
+    height: 57px;
+    left: 217.42px;
+    padding: 10.5px 10px 10.5px 10.5px;
+    border: 1px 0px 1px 1px;
+    border-width: 1px, 0px, 1px, 1px;
+    border-style: solid;
+    border-color: #CCCCCC;
+    border-right: none; 
+    padding-left: 24px;
+    
+}
+
+#footer {
+    width: 100%;
+    height: auto;
+    border-top: 1px solid #D1CAB2;
+}
