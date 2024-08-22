@@ -227,9 +227,8 @@ aside > article{
     width: 175px;
     height: 29px;
 }
-.aside_container .greeting:hover img{
-    content: none;
-    src: url(../images/sub_cate3_lnb1_ov.png);
+.aside_container .greeting:hover{
+    content: url(../images/sub_cate3_lnb1_ov.png);
     z-index: 2;
     background-position: top;
 }
@@ -288,7 +287,7 @@ aside > article{
     margin-bottom: 2px;
 } 
 
-.a_top .location{
+.a_top .sub_utill{
     position: absolute;
     box-sizing: border-box;
     width: 250px;
@@ -304,11 +303,11 @@ aside > article{
     bottom: -37px;
 }
 
-.a_top .location{
+.a_top .sub_utill{
     display: inline;
 }
 
-.location {
+.sub_utill {
     font-weight: 400;
     font-size: 12px;
     display: flex;
@@ -317,26 +316,24 @@ aside > article{
     white-space: nowrap; /* Prevent text from wrapping */
 }
 
-.location li {
+.sub_utill li {
     display: inline;
     margin-left: 5px;
 }
 
-.location li:after {
+.sub_utill li:after {
     content: ">";
     margin-left: 5px;
 }
 
-.location strong{
+.sub_utill li:last-child{
     font-weight: bold;
-    color: #A8D031;
+    color: #99ba24;
 }
 
-.location li:last-child:after {
+.sub_utill li:last-child:after {
     content: "";
 }
-
-
 
 
 #article ul > li:nth-child(1) {
