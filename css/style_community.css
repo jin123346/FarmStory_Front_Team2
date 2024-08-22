@@ -118,11 +118,10 @@ a {text-decoration: none; color: #111;}
 }
 
 .sub_bg > img {
-    width: 186px;
+    width: 270px;
     height: 37px;
     margin-top: 137px;
     margin-left: 10px;
-
 }
 
 .sidebar {
@@ -132,14 +131,22 @@ a {text-decoration: none; color: #111;}
 }
 
 .sidebar > nav > h2 > img {
-    width: 103px;
-    height: 45px;
+    width: 129px;
+    height: 44px;
     margin-top: 16px;
     margin-left: 16px;
 }
 
 .sidebar > nav {
     position: relative;
+}
+
+.sidebar > nav > img {
+    width: 175px;
+    height: 233px;
+    position: absolute;
+    top: 80px;
+
 }
 
 .sidebar > nav > img:nth-of-type(2) {
@@ -151,9 +158,33 @@ a {text-decoration: none; color: #111;}
 .sidebar > nav > ul img {
     width: 175px;
     height: 29px;
-    position: absolute;
-    top: 107px;
 }
+
+.cate5_lnb1 > img{
+    position: absolute;
+    top: 106px;
+}
+
+.cate5_lnb2 > img{
+    position: absolute;
+    top: 141px;
+}
+
+.cate5_lnb3 > img{
+    position: absolute;
+    top: 176px;
+}
+
+.cate5_lnb4 > img{
+    position: absolute;
+    top: 211px;
+}
+
+.cate5_lnb5 > img{
+    position: absolute;
+    top: 246px;
+}
+
 
 .article {
     width: 802px;
@@ -163,6 +194,13 @@ a {text-decoration: none; color: #111;}
     top: 326px;
 }
 
+.food > img {
+    width: 109px;
+    height: 24px;
+    margin-top: 43px;
+}
+
+
 .article > nav {
     width: 762px;
     height: 72px;
@@ -170,23 +208,65 @@ a {text-decoration: none; color: #111;}
     border-bottom: 1px solid #C2C2C2;
 }
 
-.article > nav > h2 > img {
-    width: 69px;
+.tit_notice > img {
+    width: 90px;
+    height: 26px;
+    margin-top: 41px;
+}
+
+.tit_diet > img {
+    width: 109px;
+    height: 24px;
+    margin-top: 43px;
+    
+}
+
+.tit_chef > img {
+    width: 110px;
+    height: 25px;
+    margin-top: 42px;
+}
+
+.tit_cs > img {
+    width: 128px;
+    height: 25px;
+    margin-top: 42px;
+}
+
+.tit_faq > img {
+    width: 131px;
     height: 24px;
     margin-top: 43px;
 }
+
 
 .location{
     float:right; 
     position: absolute;
     top:51px; 
-    left: 651.13px;
+    left: 626.13px;
     height: 17px;
     font-family: Inter; 
     font-size: 12px; 
     font-weight: 400; 
     line-height: 14.52px; 
     text-align: left;
+}
+
+.chef {
+    left: 613.13px;
+}
+
+.client {
+    left: 608.13px;
+}
+
+.question {
+    left: 602.13px;
+}
+
+.today {
+    left: 626.13px;
 }
 
 .location > img {
@@ -267,178 +347,22 @@ a {text-decoration: none; color: #111;}
     color: #999999;
 }
 
-.product_table {
-    width: 762px;
-    height: 564px;
+.board{
+    width: 260px;
+    height: 14px;
     position: absolute;
-    top: 139px;
+    top: 113px;
     left: 40px;
-    border-collapse: collapse;
-    border-top: 1px solid #111111;
 }
 
-.row {
-    border-bottom: 1px solid #EEEEEE;
-}
-
-.product_table tr:nth-of-type(2),
-.product_table tr:nth-of-type(3),
-.product_table tr:nth-of-type(4){
-    width: 762px;
-    height: 105px;
-    border-top: 1px solid #EEEEEE;
-    border-bottom: 1px solid #EEEEEE;
-}
-
-.product_table tr:nth-of-type(5) {
-    width: 762px;
-    height: 105px;
-    border-bottom: 1px solid #111111;
-}
-
-
-.product_table th {
-    width: 762px;
-    height: 38px;
-    top: 0.5px;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 14.52px;
-    text-align: center;
-    background-color: #E5ECEF;
-}
-
-.pic > img{
-    width: 80px;
-    height: 80px;
-    margin-top: 10.5px;
-    margin-left: 10px;
-    gap: 0px;
-    opacity: 0px;
-}
-
-.type {
+.board p {
     font-family: Inter;
     font-size: 12px;
     font-weight: 400;
     line-height: 14.52px;
-    text-align: center;
-    color: #777777;
-}
-
-.pro_name {
-    font-family: Inter;
-    font-size: 11.06px;
-    font-weight: 400;
-    line-height: 13.39px;
     text-align: left;
-    color: #111111;
 }
 
-.sale {
-    font-family: Inter;
-    font-size: 11.63px;
-    font-weight: 400;
-    line-height: 14.07px;
-    text-align: center;
-    color: #111111;
-}
-
-.point {
-    font-family: Inter;
-    font-size: 9.75px;
-    font-weight: 400;
-    line-height: 11.8px;
-    text-align: center;
-    color: #111111;
-
-}
-
-.price {
-    text-align: center;
-    
-}
-
-.product_table strong {
-    font-family: Inter;
-    font-size: 10.13px;
-    font-weight: 700;
-    line-height: 12.25px;
-    text-align: center;
-
-}
-
-.product_table .original_price {
-    text-decoration: line-through;
-    color: #777777;
-    margin-left: 5px;
-    font-family: Inter;
-    font-size: 9.75px;
-    font-weight: 400;
-    line-height: 11.8px;
-    text-align: center;
-}
-
-/* pages */
-.pages{
-    width: 802px;
-    height: 35px;
-    text-align: center;
-    position: absolute;
-    top: 723px;
-}
-
-.pages ul {
-    display: flex;
-    margin-left: 370.22px;
-    position: relative;
-}
-
-.pages ul li{
-    text-align: center;
-}
-
-.pages ul li:first-child::before{
-    content: "<";    
-    color: #999999; 
-}
-
-.pages ul li:nth-child(5)::after{
-    content: ">";
-    color: #999999; 
-}
-
-.pages ul li a {
-  
-}
-
-.no {
-    font-family: Inter;
-    font-size: 10.5px;
-    font-weight: 400;
-    line-height: 12.71px;
-    text-align: center;
-    margin-right: 5px;
-    text-decoration: none;
-    color: #999999; 
-    font-weight: normal;
-    display: inline-block;
-}
-
-.last_no {
-    font-family: Inter;
-    font-size: 10.5px;
-    font-weight: 400;
-    line-height: 12.71px;
-    text-align: center;
-    margin-right: 0px;
-}
-
-.current {
-    color: #000; /* Black color for the active link */
-    font-weight: bold;
-    text-decoration: underline;
-}
 
 
 /* footer  */
@@ -446,7 +370,7 @@ footer{
     width: 100%;
     height: auto;
     position: absolute;
-    top: 1084px;
+    top: 976px;
 }
 
 footer .ftlogo {
