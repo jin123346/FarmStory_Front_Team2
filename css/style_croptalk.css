@@ -227,8 +227,9 @@ aside > article{
     width: 175px;
     height: 29px;
 }
-.aside_container .greeting:hover{
-    content: url(../images/sub_cate3_lnb1_ov.png);
+.aside_container .greeting:hover img{
+    content: none;
+    src: url(../images/sub_cate3_lnb1_ov.png);
     z-index: 2;
     background-position: top;
 }
@@ -287,7 +288,7 @@ aside > article{
     margin-bottom: 2px;
 } 
 
-.a_top .sub_utill{
+.a_top .location{
     position: absolute;
     box-sizing: border-box;
     width: 250px;
@@ -303,11 +304,11 @@ aside > article{
     bottom: -37px;
 }
 
-.a_top .sub_utill{
+.a_top .location{
     display: inline;
 }
 
-.sub_utill {
+.location {
     font-weight: 400;
     font-size: 12px;
     display: flex;
@@ -316,24 +317,26 @@ aside > article{
     white-space: nowrap; /* Prevent text from wrapping */
 }
 
-.sub_utill li {
+.location li {
     display: inline;
     margin-left: 5px;
 }
 
-.sub_utill li:after {
+.location li:after {
     content: ">";
     margin-left: 5px;
 }
 
-.sub_utill li:last-child{
+.location strong{
     font-weight: bold;
-    color: #99ba24;
+    color: #A8D031;
 }
 
-.sub_utill li:last-child:after {
+.location li:last-child:after {
     content: "";
 }
+
+
 
 
 #article ul > li:nth-child(1) {
