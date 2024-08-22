@@ -154,6 +154,22 @@ header {
     margin-top: 81px;
     width: 175px;
     height: 233px;
+    background-position: cover;
+    z-index: 1;
+    
+
+}
+
+.side_logo {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+}
+
+.side_menu > div {
+    margin-top: 81px;
+    width: 175px;
+    height: 233px;
     background: url(../images/sub_aside_bg_lnb.png);
 }
 
@@ -242,6 +258,7 @@ header {
     left: 40px;
     letter-spacing: -1px;
 }
+
 
 /* 푸터 영역 */
 footer {
