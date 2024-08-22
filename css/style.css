@@ -2,7 +2,7 @@
 /* reset */
 *{margin: 0; padding:0; font-family: "Inter", sans-serif; font-size: 12px; font-weight: 400;}
 html{color:#111; position:relative;}
-html, body{height:100%; }
+html, body{height:100%; overflow:hidden;}
 body{font-size:12px; line-height:18px; font-family: 'Noto Sans KR', sans-serif;}
 a, address, blockquote, br, fieldset, legend, label, form, input, select, textarea, button, cite, code, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, div, iframe, ul, ol, li, hr, img {margin: 0; padding: 0;}
 a{color:#111; text-decoration: none;}
@@ -325,83 +325,10 @@ main .main_banner .bannertxt{
     width: 980px;
     height: 186px;
     overflow: hidden;
-    display: inline-flex;
-    margin-top: 26px;
-    box-sizing: border-box;
-    
-}
-
-.article{
-    box-sizing: border-box;
-    width: 327px;
-    margin-right: 12px;
-}
-
-.article div{
-    display: inline-block;
-    width: 315px;
-    height: 96px;
-    position: relative;
-}
-
-.article .market_form img{ 
-    float: left;
-    width: 105px;
-    height: 96px;
-}
-.article .market_form table{
-    float: right;
-}
-
-.article a{
-    display: block;
-    width: 100%;
-    height: 38px;
-    line-height: 38px;
-    margin-bottom: 21px;
-}
-.article .market_table{
-    width: 194.78px;
-    height: 98px;
-    table-layout: fixed;
-    color:  #6A6A6A;
-    display: block;
-    border-collapse: collapse;
-    text-align: left;
     overflow: hidden;
+    display: inline-flex;
+    margin-top: 10px;
 }
-
-.article .market_table{
-    width: 194.78px;
-    height: 98px;
-}
-
-.market_table th{
-    text-overflow: ellipsis;
-
-    width: 7px;
-    height: 14px;
-}
-
-.market_table td:nth-of-type(1){
-    text-overflow: ellipsis;
-    width: 130.2px;
-    height: 18px;
-
-}
-
-.market_table td:nth-of-type(2){
-    text-overflow: ellipsis;
-
-    width: 44.2px;
-    height: 14px;
-}
-
-/* notice */
-
-
-
-
 
 
 
