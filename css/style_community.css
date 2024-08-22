@@ -185,6 +185,22 @@ a {text-decoration: none; color: #111;}
     top: 246px;
 }
 
+.cate5_lnb1 > img:hover{
+    content: url(../images/sub_cate5_lnb1_ov.png);
+}
+.cate5_lnb2 > img:hover{
+    content: url(../images/sub_cate5_lnb2_ov.png);
+}
+.cate5_lnb3 > img:hover{
+    content: url(../images/sub_cate5_lnb3_ov.png);
+}
+.cate5_lnb4 > img:hover{
+    content: url(../images/sub_cate5_lnb4_ov.png);
+}
+.cate5_lnb5 > img:hover{
+    content: url(../images/sub_cate5_lnb5_ov.png);
+}
+
 
 .article {
     width: 802px;
