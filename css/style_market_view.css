@@ -176,50 +176,37 @@ a {text-decoration: none; color: #111;}
     margin-top: 43px;
 }
 
-.root {
-    width: 152.88px;
-    height: 17px;
-    margin-top: 0px;
-    left: 609.13px;
-    display: flex;
-    background: url("../images/sub_page_nav_ico.png") no-repeat right;
-}
-
-.root {
-    display: flex; /* 항목들을 가로로 배치 */
-    width: 152.88px;
-    height: 17px;
+.location{
+    float:right; 
     position: absolute;
-    top: 45px;
-    left: 609.13px;
-
-}
-
-
-.root li:not(:last-child)::after {
-    content: ">"; /* 구분자 추가 */
-    margin-left: 2px; /* 구분자와 링크 간격 */
-}
-
-.root a:nth-of-type(1), .root a:nth-of-type(2){
-    width: 152.88px;
+    top: 51px; 
+    left: 651.13px;
     height: 17px;
-    top: 50px;
-    left: 609.13px;
-    font-family: Inter;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 14.52px;
+    font-family: Inter; 
+    font-size: 12px; 
+    font-weight: 400; 
+    line-height: 14.52px; 
     text-align: left;
 }
 
-.root a:nth-of-type(3){
-    font-family: Inter;
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 14.52px;
-    text-align: left;
+.location > img {
+    margin-bottom: 1px;
 }
+
+.location span{
+    color:#8C8C8C;
+}
+
+.location span:after{
+    display: inline-block; 
+    content: ">" ; 
+    clear: both;
+}
+
+.location strong{
+    color:#91BA15;
+}
+
 
 .article h3:nth-of-type(1) {
     width: 64.2px;
@@ -290,6 +277,10 @@ a {text-decoration: none; color: #111;}
     line-height: 14.52px;
     text-align: left;
 
+}
+
+.deliver > span {
+    color: #777777;
 }
 
 .sell_price {
@@ -392,7 +383,7 @@ a {text-decoration: none; color: #111;}
     text-align: left;
 }
 
-.article p:nth-of-type(1) {
+.sms {
     width: 450px;
     height: 14px;
     position: absolute;
@@ -437,7 +428,8 @@ a {text-decoration: none; color: #111;}
     width: 217.42px;
     height: 93px;
     border: 1px 1px 1px 0px;
-    border-width: 1px, 1px, 1px, 0px;
+    padding: 10.5px 10px 10.5px 10.5px;
+    border-top: 1px;
     border-style: solid;
     border-color: #CCCCCC;
     border-left: none; 
@@ -449,7 +441,7 @@ a {text-decoration: none; color: #111;}
     left: 217.42px;
     padding: 10.5px 10px 10.5px 10.5px;
     border: 1px 0px 1px 1px;
-    border-width: 1px, 0px, 1px, 1px;
+    border-top: 1px;
     border-style: solid;
     border-color: #CCCCCC;
     border-right: none; 
@@ -460,7 +452,8 @@ a {text-decoration: none; color: #111;}
     width: 217.42px;
     height: 57px;
     border: 1px 1px 1px 0px;
-    border-width: 1px, 1px, 1px, 0px;
+    padding: 10.5px 10px 10.5px 10.5px;
+    border-bottom: 1px;
     border-style: solid;
     border-color: #CCCCCC;
     border-left: none; 
@@ -472,7 +465,7 @@ a {text-decoration: none; color: #111;}
     left: 217.42px;
     padding: 10.5px 10px 10.5px 10.5px;
     border: 1px 0px 1px 1px;
-    border-width: 1px, 0px, 1px, 1px;
+    border-bottom: 1px;
     border-style: solid;
     border-color: #CCCCCC;
     border-right: none; 
@@ -480,8 +473,66 @@ a {text-decoration: none; color: #111;}
     
 }
 
-#footer {
+/* footer  */
+footer{
     width: 100%;
     height: auto;
-    border-top: 1px solid #D1CAB2;
+    position: absolute;
+    top: 2095px;
+    margin-right: 0;
 }
+
+
+footer .ftlogo {
+   float: left;
+   margin-right: 70px;
+}
+
+footer .ftlogo {
+    float: left;
+    margin-right: 70px;
+ }
+ 
+ .footerIn{
+     width: 980px;
+     height: 130px;
+     margin: 0 auto;
+     background: url(../images/footer_top_line.png) no-repeat;
+     background-position: top;
+ }
+ 
+ .footerIn *{
+     display: inline;
+     font-size: 12px;
+ 
+ }
+ 
+ .companyft {
+     display: block;
+     padding-top: 27px;
+ }
+ 
+ .ceoft{
+    display: block;
+ 
+ }
+ 
+ .Copy{
+     display: block;
+     padding-top: 0px;
+ }
+ 
+ .companyft li::after{
+     content: " /";
+ 
+ }
+ .companyft li:last-child::after{
+     content: "";
+ }
+ 
+ .ceoft li::after{
+     content: " /";
+ }
+ .ceoft li:last-child:after{
+     content: "";
+ }
