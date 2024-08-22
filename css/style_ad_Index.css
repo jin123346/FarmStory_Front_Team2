@@ -83,11 +83,6 @@ main{
     box-sizing: border-box;
 }
 
-.mainIn.list{
-    height: 400px;
-}
-
-
 .mainIn div{
     display: inline-flex;
     flex-direction: column;
@@ -154,12 +149,6 @@ main .section{
     box-sizing: border-box;
 }
 
-.section.list{
-    height: 400px;
-}
-
-
-
 /* main_container */
 .main_container{
     margin-left: 10px;
@@ -219,10 +208,6 @@ main .section{
     height: 193px;
 }
 
-.status_table.list{
-    height: 219px;
-}
-
 .status_table table{
     width: 784px;
     border-top : 2px solid #333333;
@@ -239,103 +224,6 @@ main .section{
     border-bottom: 1px dotted #999999;
     text-align: center;
 }
-
-/* product - list.html  */
-#productList{
-    margin-bottom: 12px;
-    box-sizing: border-box;
-    height: 193px;
-}
-
-
-
-#productList table{
-    width: 784px;
-    border-top : 2px solid #333333;
-}
-
-
-
-#productList th{
-    height: 42px;
-}
-
-#productList td{
-    height: 42px;
-    border-bottom: 1px dotted #999999;
-    text-align: center;
-}
-
-#productList  tbody  tr{
-    height: 89px;
-}
-
-#product_img1{
-    width: 60px;
-    height: 60px;
-}
-
-
-
-
-
-/* btn- group */
-.status_table .btn_group {
-    width: 784px;
-    height: 51px;
-    box-sizing: border-box;
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.btn_group > .deletebtn{
-    width: 48px;
-    height: 14px;
-    width: auto;
-    float: left;
-    position: relative;
-    margin-top: 11px;
-    align-self: self-start;
-}
-
-.btn_group > .insertbtn {
-    width: 74px;
-    height: 31px;
-    box-sizing: border-box;
-    border-radius: 20px;
-    border: 1px solid #cccccc;
-    text-align: center;
-    line-height: 31px;
-    margin-top: 10px;
-}
-
-
-
-
-/* pages */
-.pages{
-    width: 784px;
-    height: 35px;
-    text-align: center;
-}
-
-.pages ul li{
-    display: inline-flex;
-    text-align: center;
-}
-
-.pages ul li:first-child::before{
-    content: "<";    
-}
-
-.pages ul li:nth-child(5)::after{
-    content: '>';
-}
-
-
 
 
 /* footer */
