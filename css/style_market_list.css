@@ -131,6 +131,7 @@ a {text-decoration: none; color: #111;}
     background: url("../images/sub_aside_bg_line.png") no-repeat right;
 }
 
+
 .sidebar > nav > h2 > img {
     width: 103px;
     height: 45px;
@@ -153,6 +154,10 @@ a {text-decoration: none; color: #111;}
     height: 29px;
     position: absolute;
     top: 107px;
+}
+
+.sidebar ul img:hover {
+    content: url(../images/sub_cate2_lnb1_ov.png);
 }
 
 .article {
@@ -400,17 +405,19 @@ a {text-decoration: none; color: #111;}
 
 .pages ul li:first-child::before{
     content: "<";    
-    color: #999999; 
+    color: #999999;
+    position: absolute;
+    right: 431px;
+    top: 1px; 
 }
 
 .pages ul li:nth-child(5)::after{
     content: ">";
     color: #999999; 
+    position: absolute;
+    top: 1px;
 }
 
-.pages ul li a {
-  
-}
 
 .no {
     font-family: Inter;
@@ -441,59 +448,45 @@ a {text-decoration: none; color: #111;}
 }
 
 
-/* footer  */
-footer{
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 1084px;
-}
-
-footer .ftlogo {
-   float: left;
-   margin-right: 70px;
-}
-
-.footerIn{
+/* 푸터 영역 */
+footer {
     width: 980px;
     height: 130px;
     margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
     background: url(../images/footer_top_line.png) no-repeat;
     background-position: top;
+    background-position-y: -4px;
+    top: 193px;
+    left: 0px;
 }
 
-.footerIn *{
-    display: inline;
-    font-size: 12px;
+footer > img {
+    float: left;
+}
+
+footer > span:nth-child(2) {
+    font-size: 10.83px;
+    line-height: 18px;
+    word-spacing: -3px;
+    position: absolute;
+    width: 720.68px;
+    top: 27px;
+    right:  15.8px;
+    color: #585858;
+    font-weight: 400;
 
 }
 
-.companyft {
-    display: block;
-    padding-top: 27px;
-}
-
-.ceoft{
-   display: block;
-
-}
-
-.Copy{
-    display: block;
-    padding-top: 0px;
-}
-
-.companyft li::after{
-    content: " /";
-
-}
-.companyft li:last-child::after{
-    content: "";
-}
-
-.ceoft li::after{
-    content: " /";
-}
-.ceoft li:last-child:after{
-    content: "";
+footer > span:nth-child(3) {
+    font-family: Inter;
+    font-size: 10.88px;
+    font-weight: 700;
+    line-height: 13.16px;
+    text-align: left;
+    position: absolute;
+    bottom: 33px;
+    right: 534px;
+    color: #888888;
 }
