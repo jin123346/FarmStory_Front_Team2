@@ -2,73 +2,230 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Write</title>
-    <link rel="stylesheet" href="../css/style_write.css">
-    <style>
-    input.file {
-    display: none;
-    }
-    label {
-        display: none;
-    all: unset;
-    width: 80px;
-    height: 20px;
-    box-sizing: border-box;
-    padding: 3px 8px; 
-    font-size: 11.44PX;
-    line-height: 13.48px;
-    /*padding를 주어 텍스트를 바탕으로 주변이 10px만큼 떨어지도록 설정*/
-    text-align: center; /*버튼에서 텍스트가 가운데 있도록 설정*/
-    background-color: #EFEFEF; /*배경 색을 설정(원하는 걸로 바꿔도 됨)*/
-    background-position: bottom;
-    border-radius: 2.5px;
-    color: black; /*글자 색*/
-    font-weight: 400; /*폰트 사이즈를 500으로 바꿈*/
-    cursor: pointer; 
-    border: 1px solid #767676;
-    }
-
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style_admin.css">
+    <title>Administrator</title>
 </head>
 <body>
-    <header>
-        <h1>Board System</h1>
-        <div>
-            홍길동님 반갑습니다. <a href="#">[로그아웃]</a>
-        </div>
-    </header>
-    <div class="container">
-        <nav>
-            <h4>글쓰기</h4>
-        </nav>
-        <form>
-            <table class="table_1">
-                <tr class="tr_tit">
-                    <th>제목</th>
-                    <td><input type="text" placeholder="제목을 입력하세요."></td>
-                </tr>
-                <tr class="tr_con">
-                    <th>내용</th>
-                    <td><textarea rows="10"></textarea></td>
-                </tr>
-                <tr class="tr_file">
-                    <th>파일</th>
-                    <td><label for="file">choose file<input type="file" class="file"></label></td>
-                </tr>
-            </table>
-            <div class="btn_1">
-                <button type="submit">작성완료</button>
-                <button type="button">취소</button>
+    <!-- wrapper -->
+    <div id="wrapper">
+        <header>
+            <div class="headerIn">
+                <div class="top">
+                    <img src="../admin/images/admin_logo.jpg" alt="">
+                </div>
+                <div class="utill">
+                    <ul>
+                        <li><a href="#" class="util_home">HOME</a></li>
+                        <li><a href="#" class="util_logout">로그아웃</a></li>
+                        <li><a href="#" class="util_cs">고객센터</a></li>
+                    </ul>
+                </div>
+            </div><!--headerIn end-->
+        </header><!--header end-->
+
+        <main>
+            <div class="mainIn">
+                <div class="aside">
+                    <aside>
+                        <div class="sub_title">
+                            <span>주요기능</span>
+                        </div>
+                        <div class="adm_list">
+                            <ul>
+                                <li>상품관리
+                                    <ul>
+                                        <li>상품목록</li>
+                                        <li>상품등록</li>
+                                    </ul>
+                                </li>
+    
+                                <li>주문관리
+                                    <ul>
+                                        <li>주문목록</li>
+                                    </ul>
+                                </li>
+                                <li>회원관리
+                                    <ul>
+                                        <li>회원목록</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </aside> <!-- aside end-->
+                </div><!-- .aside end-->
+                
+                <div class="section">
+                    <section>
+                        <div class="main_container">
+                            <div class="main_top"><span>관리자 메인</span></div>
+                            <div class="status_table">
+                                <div class="tbname">
+                                    <span>상품현황</span>
+                                    <span>더보기</span>
+                                </div>
+                                <table class="product">
+                                    <thead>
+                                        <tr>
+                                            <th>상품번호</th>
+                                            <th>상품명</th>
+                                            <th>구분</th>
+                                            <th>가격</th>
+                                            <th>재고</th>
+                                            <th>등록일</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1011</td>
+                                            <td>사과500g</td>
+                                            <td>과일</td>
+                                            <td>4,000원</td>
+                                            <td>100</td>
+                                            <td>2023-01-01</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1011</td>
+                                            <td>사과500g</td>
+                                            <td>과일</td>
+                                            <td>4,000원</td>
+                                            <td>100</td>
+                                            <td>2023-01-01</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1011</td>
+                                            <td>사과500g</td>
+                                            <td>과일</td>
+                                            <td>4,000원</td>
+                                            <td>100</td>
+                                            <td>2023-01-01</td>
+                                        </tr>
+                                    </tbody>
+                                  
+                                </table>
+                            </div>
+                            <div class="status_table">
+                                <div class="tbname">
+                                    <span>주문현황</span>
+                                    <span>더보기</span>
+                                </div>
+                                <table class="order">
+                                   
+                                    <thead>
+                                        <tr>
+                                            <th>주문번호</th>
+                                            <th>상품명</th>
+                                            <th>판매가격</th>
+                                            <th>수량</th>
+                                            <th>배송비</th>
+                                            <th>합계</th>
+                                            <th>주문자</th>
+                                            <th>주문일</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1011</td>
+                                            <td>사과500g</td>
+                                            <td>4,000원</td>
+                                            <td>2개</td>
+                                            <td>3000원</td>
+                                            <td>8000원</td>
+                                            <td>홍길동</td>
+                                            <td>2023-01-01</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1011</td>
+                                            <td>사과500g</td>
+                                            <td>4,000원</td>
+                                            <td>2개</td>
+                                            <td>3000원</td>
+                                            <td>8000원</td>
+                                            <td>홍길동</td>
+                                            <td>2023-01-01</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1011</td>
+                                            <td>사과500g</td>
+                                            <td>4,000원</td>
+                                            <td>2개</td>
+                                            <td>3000원</td>
+                                            <td>8000원</td>
+                                            <td>홍길동</td>
+                                            <td>2023-01-01</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="status_table">
+                                <div class="tbname">
+                                    <span>회원현황</span>
+                                    <span>더보기</span>
+                                </div>
+                                <table class="customer">
+                                    <thead>
+                                        <tr>
+                                            <th>회원아이디</th>
+                                            <th>이름</th>
+                                            <th>닉네임</th>
+                                            <th>휴대폰</th>
+                                            <th>이메일</th>
+                                            <th>등급 </th>
+                                            <th>회원가입일</th>
+                                         </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>a101</td>
+                                            <td>김유신</td>
+                                            <td>유신123</td>
+                                            <td>010-1234-1001</td>
+                                            <td>yushin123@naver.com</td>
+                                            <td>2</td>
+                                            <td>2023-01-01 </td>
+                                        </tr>
+                                        <tr>
+                                            <td>a101</td>
+                                            <td>김유신</td>
+                                            <td>유신123</td>
+                                            <td>010-1234-1001</td>
+                                            <td>yushin123@naver.com</td>
+                                            <td>2</td>
+                                            <td>2023-01-01 </td>
+                                        </tr>    
+                                        <tr>
+                                            <td>a101</td>
+                                            <td>김유신</td>
+                                            <td>유신123</td>
+                                            <td>010-1234-1001</td>
+                                            <td>yushin123@naver.com</td>
+                                            <td>2</td>
+                                            <td>2023-01-01 </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div><!--main-container-->
+                    </section><!-- section end-->
+                </div><!-- .section end-->
+               
+            </div><!--mainIn-->
+        </main><!--main end-->
+
+        <footer>
+            <div class="fIn">
+                <div class="fttxt">
+                    <span>FARMSTORY ADMINISTRATOR Version 1.0.1</span>
+                </div>
+                <div class="copy">
+                    <p>
+                        <span>Copyright</span> 김철학(개발에반하다.) All rights reserved.
+                    </p>
+                    
+                </div>
             </div>
-        </form>
-    </div>
-    <footer>
-        <span>
-            Copyright© 김철학(개발에반하다.)
-        </span>
-        <span>
-            v1.0.1
-        </span>
-    </footer>
+        </footer><!--footer-->
+
+    </div> <!--wrapper end-->
 </body>
 </html>
