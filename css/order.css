@@ -93,7 +93,6 @@ a, a:link, a:visited, a:active, a:hover{text-decoration: none; color: inherit;}
 .location strong{color:#91BA15;}
 
 
-
 /* footer 푸터 -------------------------------------------------------- */
 #footer{width:100%; height: auto;  position: relative;}
 .footerIn{width: 980px; margin:0 auto; height: 500px; background: #ffddf4;} 
