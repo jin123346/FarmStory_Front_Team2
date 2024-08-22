@@ -339,18 +339,14 @@ header {
     text-indent: 5px;
 }
 
-.tb2 tr:nth-of-type(3) > td:nth-child(2){
+.tb2 tr:nth-of-type(3) > td:nth-child(2)
+,.tb2 tr:nth-of-type(4) > td:nth-child(2)
+,.tb2 tr:nth-of-type(5) > td:nth-child(2)
+,.tb2 tr:nth-of-type(6) > td:nth-child(2)
+{
     font-size: 10.5px;
 }
-.tb2 tr:nth-of-type(4) > td:nth-child(2){
-    font-size: 10.5px;
-}
-.tb2 tr:nth-of-type(5) > td:nth-child(2){
-    font-size: 10.5px;
-}
-.tb2 tr:nth-of-type(6) > td:nth-child(2){
-    font-size: 10.5px;
-}
+
 .tb2 tr:nth-of-type(7) > td:nth-child(2){
     font-size: 9.19px;
     color: #C20A0A;
