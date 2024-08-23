@@ -392,7 +392,7 @@ a {text-decoration: none; color: #111;}
     position: absolute;
     top: 723px;
 }
-
+  
 .pages ul {
     display: flex;
     margin-left: 370.22px;
@@ -406,6 +406,7 @@ a {text-decoration: none; color: #111;}
 .pages ul li:first-child::before{
     content: "<";    
     color: #999999;
+    margin-right: 5px;
     position: absolute;
     right: 431px;
     top: 1px; 
@@ -414,6 +415,7 @@ a {text-decoration: none; color: #111;}
 .pages ul li:nth-child(5)::after{
     content: ">";
     color: #999999; 
+    margin-left: 5px;
     position: absolute;
     top: 1px;
 }
@@ -439,7 +441,7 @@ a {text-decoration: none; color: #111;}
     line-height: 12.71px;
     text-align: center;
     margin-right: 0px;
-}
+} 
 
 .current {
     color: #000; /* Black color for the active link */
