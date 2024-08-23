@@ -95,7 +95,7 @@ header .gnb >li {
     box-sizing: border-box
 }
 header .gnb > li a{
-    background: url(/images/head_menu_line.png) no-repeat; 
+    background: url(../images/head_menu_line.png) no-repeat; 
     background-position: cover;
 }
 header .gnb > li >a{
@@ -312,10 +312,10 @@ main .main_banner .bannertxt{
 }
 
 .ad .ad1{
-    background: url(/images/main_banner_sub1_bg.jpg);
+    background: url(../images/main_banner_sub1_bg.jpg);
 }
 .ad .ad2{
-    background: url(/images/main_banner_sub2_bg.jpg);
+    background: url(../images/main_banner_sub2_bg.jpg);
 }
 
 
@@ -356,7 +356,7 @@ main .main_banner .bannertxt{
     width: 980px;
     height: 154px;
     box-sizing: border-box;
-    background: url(/images/main_cs_top_line.png) no-repeat;
+    background: url(../images/main_cs_top_line.png) no-repeat;
     background-position-y: top;
     background-position: top;
     overflow: hidden;
@@ -370,7 +370,7 @@ main .main_banner .bannertxt{
     height: 124px;
     margin-bottom: 16px;
     box-sizing: border-box;
-    background: url(/images/main_sub2);
+    background: url(../images/main_sub2);
     margin-top: 18px;
 
 }
@@ -484,7 +484,7 @@ footer .ftlogo {
     width: 980px;
     height: 130px;
     margin: 0 auto;
-    background: url(/images/footer_top_line.png) no-repeat;
+    background: url(../images/footer_top_line.png) no-repeat;
     background-position: top;
 }
 
