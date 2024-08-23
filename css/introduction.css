@@ -13,7 +13,6 @@ address{font-style: normal;}
 /* hyper link */
 a, a:link, a:visited, a:active, a:hover{text-decoration: none; color: inherit;}
 
-
 #wrapper{
     width: 100%;
     height: auto;
@@ -21,98 +20,123 @@ a, a:link, a:visited, a:active, a:hover{text-decoration: none; color: inherit;}
     box-sizing: border-box;
 }
 
-/* header 헤더 --------------------------------------------------------*/
-header{
-    width: 100%;
-    height: auto;
-    position: relative;
-    box-sizing: border-box;
-}
-.headerIn{    
+#header {
     width: 980px;
-    
+    height: 142px;
+    background-image: url(../images/head_top_line.png);
+    background-repeat: no-repeat;   
     margin: 0 auto;
-    overflow: hidden;
+    position: relative;
 }
-.logo{
-    display: flex;
-    justify-content: center;
-    box-sizing: border-box;
-    margin: 0 auto;
+
+.logo img {
     width: 190px;
     height: 64px;
-    align-items: center;
-}
-
-.logo img{
     margin-top: 20px;
+    margin-left: 395px; 
 }
 
-
-/* utill */
-.utill{}
-
-.headerIn .utill{
+.utill {
+    display: flex; /* 항목들을 가로로 배치 */
     position: absolute;
-    width: 980px;
-    height: 14px;
-    line-height: 14px;
-    top: 14px;
-    font-style: normal;
+    line-height: 14.52px;
+    margin: 0;
+    right: 0.2px;
+    top: 17px;
+}
+
+.utill li {
+    margin-right: 2px; /* 항목들 사이의 간격 */
+}
+
+.utill li:not(:last-child)::after {
+    content: "|"; /* 구분자 추가 */
+    margin-left: 2px; /* 구분자와 링크 간격 */
+    color: black; /* 구분자 색상 */
+}
+
+.utill a {
+    font-family: Inter;
     font-size: 12px;
-    display: flex;
-    margin: 0 auto;
-    justify-content: end;
+    font-weight: 400;
+    line-height: 14.52px;
+    text-align: left;
+    white-space: nowrap;
 }
 
-/* h_txt */
-.h_txt{
-    box-sizing: border-box;
-    width: 100%;
+.utill li:last-child {
+    margin-right: 0; /* 마지막 항목의 오른쪽 여백 제거 */
+}
+
+.h_txt img {
+    width: 229px;
     height: 15px;
-    text-align: right;
-}
-.h_txt img{
-    float: right;
-    justify-content: right;
+    position: absolute;
+    top: 59px;
+    left: 751px;
 }
 
-
-/* gnb_wrap */
-.gnb_wrap{
-  
-    
-}
-
-.gnb_wrap .gnb{
+.gnb {
+    display: flex;
     width: 980px;
     height: 50px;
-    margin: 0 auto;
-    list-style: none;
-    display: flex;
-}
-.gnb_wrap .gnb li{
-    float: left;
-    width: 20%;
-    height: 50px;
-    box-sizing: border-box
-  
+    top: 92px;
 }
 
-.gnb_wrap .gnb li a{
-    display: block;
-    width: 100%;
+.gnb > li {
+    width: 196px;
     height: 50px;
-    text-align: center;
-    line-height: 50px;
-    padding-top: 18px;
-    box-sizing: border-box;
-    
+    background-image: url(../images/head_menu_line.png);
+    background-repeat: no-repeat;   
 }
-.gnb_wrap .gnb li a img{
-    background: url(../images/head_menu_line.png) no-repeat; 
-    background-position: cover;
+
+.gnb img {
+    margin-top: 12px;
 }
+
+.gnb > li:nth-child(2) {
+    position: relative;
+}
+
+.gnb > li:nth-child(2) > img {
+    width: 37px;
+    height: 34px;
+    position: absolute;
+    left: 98px;
+    top: -22px; 
+}
+
+
+
+/* aside */
+aside{position: relative; 
+    float: left; 
+    width: 178px;
+     height: 650px; 
+     background: url('../images/sub_aside_bg_line.png') no-repeat right;}
+
+    .aside_tit{
+        margin-top: 16px;
+        text-align: center;
+     }
+
+     aside ul li:nth-child(1){
+        margin-top: 26px;
+     }
+
+     aside ul li:nth-child(2){
+        margin-top: 6px;
+     }
+
+
+.sidebar {
+ background-image: url('../images/sub_aside_bg_lnb.png');
+ background-position: cover;
+ height: 233px;
+ display: inline-block;
+ margin-top: 20px;
+}/* aside end */
+
 
 
 
@@ -122,6 +146,7 @@ header{
     height: auto;
     box-sizing: border-box;
 }
+
 /* mainIn */
 .mainIn{
     width: 980px;
@@ -143,41 +168,6 @@ width: 326px;
 left: 10px;
 }
 
-
-aside{position: relative; 
-    float: left; 
-    width: 178px;
-     height: 1000px; 
-
-     background: url('../images/sub_aside_bg_line.png') no-repeat right;
-     }
-
-
-
-     .aside_tit{
-        margin-top: 16px;
-        text-align: center;
-
-     }
-     aside ul li:nth-child(1){
-        margin-top: 26px;
-     }
-
-     aside ul li:nth-child(2){
-        margin-top: 6px;
-     }
-
-
-.sidebar {
- background-image: url('../images/sub_aside_bg_lnb.png');
- background-position: cover;
- height: 233px;
- display: inline-block;
- margin-top: 20px;
-
-
-}
-
 article > nav{
 width: 762px;
 height: 72px;
@@ -185,7 +175,6 @@ height: 72px;
 margin-left: 40px;
 overflow: hidden;
 }
-
 
 article > nav::after{
     display: block;
@@ -198,27 +187,24 @@ article > nav::after{
 }
 
  article{
-    /* position: relative; */
     width: 802px;
     height: 650px;
     float: right;
  }
  
+ .txt strong{color:#91BA15; font-weight: bold;}
+
+ .txt{
+  margin: 14px 0 0 40px; }
+ 
+ .content{
+     margin-left: 40px;}
+ 
 
 
- /* .location{
-   
-    background: url('../images/sub_page_nav_ico.gif') no-repeat;
-    text-align: left;
-   
-     
- } */
-
+ /* .location */
  .location{
     float:right; 
-    /* position: absolute;
-    top:51px; 
-    left: 651.13px; */
     height: 17px;
     font-family: Inter; 
     font-size: 12px; 
@@ -249,23 +235,73 @@ article > nav::after{
 
 .location strong{
     color:#91BA15;
+    font-weight: 700;
+}  /* .location end */
+
+
+/* footer  */
+footer{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 976px;
 }
 
-.txt strong{color:#91BA15; font-weight: bold;}
-
-
-
-.greeting > h2 {
-    /* position: absolute;
-    top: 345px; */
-
-    
+footer .ftlogo {
+   float: left;
+   margin-right: 70px;
 }
 
-.txt{
- margin: 14px 0 0 40px;
+.footerIn{
+    width: 980px;
+    height: 130px;
+    margin: 0 auto;
+    background: url(../images/footer_top_line.png) no-repeat;
+    background-position: top;
 }
 
-.content{
-    margin-left: 40px;
+.footerIn *{
+    display: inline;
+    font-size: 12px;
+
+}
+
+.companyft {
+    display: block;
+    padding-top: 27px;
+}
+
+.ceoft{
+   display: block;
+
+}
+
+.Copy{
+    display: block;
+    padding-top: 0px;
+}
+
+.companyft li::after{
+    content: " /";
+
+}
+.companyft li:last-child::after{
+    content: "";
+}
+
+.ceoft li::after{
+    content: " /";
+}
+.ceoft li:last-child:after{
+    content: "";
+}
+/* footer end */
+
+
+.Copy {
+    text-align: justify;
+    padding-left: 243px; 
+    font-size: 12px; /* Font size */
+    color: #777; /* Text color */
+    font-weight: bold;
 }
