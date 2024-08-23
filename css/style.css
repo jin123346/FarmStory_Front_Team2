@@ -95,7 +95,7 @@ header .gnb >li {
     box-sizing: border-box
 }
 header .gnb > li a{
-    background: url(../images/head_menu_line.png) no-repeat; 
+    background: url(/images/head_menu_line.png) no-repeat; 
     background-position: cover;
 }
 header .gnb > li >a{
@@ -484,7 +484,7 @@ footer .ftlogo {
     width: 980px;
     height: 130px;
     margin: 0 auto;
-    background: url(../images/footer_top_line.png) no-repeat;
+    background: url(/images/footer_top_line.png) no-repeat;
     background-position: top;
 }
 
