@@ -20,30 +20,15 @@
 
 .tabs_item::after {
     position: absolute;
-    top: 1px;
-    left: -4px;
-    display: inline-block;
-    content: "";
-    clear: both;
-    width: 1px;
-    height: 14px;
-    background-color: #000;
-}
-
-.item::after {
-    position: absolute;
-    top: 1px;
-    left: -4px;
+    top: 2px;
+    right: -4px;
     display: block;
     content: "";
     clear: both;
     width: 1px;
     height: 14px;
-    background-color: #999999 !important;
-}
-
-.tabs_item:first-child::after {
-    display: none;
+    background-color: #000;
+    
 }
 
 .item {
@@ -53,6 +38,23 @@
     line-height: 14.3px;
     text-align: left;
     color: #999999 !important;
+}
+
+.item::after {
+    position: absolute;
+    top: 2px;
+    right: -4px;
+    display: block;
+    content: "";
+    clear: both;
+    width: 1px;
+    height: 14px;
+    background-color: #999999 !important;
+}
+
+
+.item_last::after {
+    display: none;
 }
 
 .product_table {
