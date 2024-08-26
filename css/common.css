@@ -37,7 +37,7 @@
 .articleIn{width: 802px; margin-left: 40px;}
 
 /* article 타이틀 */
-h2{margin-top: 43px; }
+h2{margin-top: 43px;}
 h2::after{display: block; content: ""; clear: both; width: 762px; height: 1px; background: #c2c2c2; margin-top: 5px;}
 
 /* location */
