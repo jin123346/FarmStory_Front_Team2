@@ -2,124 +2,103 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-     <link rel="stylesheet" href="../css/style_direction.css">
+    <link rel="shortcut icon" href="../images/fav.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/community.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>길찾기</title>
-    <!-- 
-         날짜 : 2024/08/16
-         이름 : 하진희
-         작업 내용
-         - 2024/08/16
-    -->
+   
 </head>
 <body>
     <div id="wrapper">
 
-        <header>
+        <header id="header">
             <div class="headerIn">
                 <div class="logo">
-                    <a href="#">
-                        <img src="../images/logo.png" alt="logo">
-                    </a>
-                </div>
-             
-                <ul class="utill">
-                    <li><a href="#" class="Home" alter="홈">HOME | </a></li>
-                    <li><a href="#" class="login" alter="로그인">로그인 |</a></li>
-                    <li><a href="#" class="enroll" alter="회원가입">회원가입 |</a></li>
-                    <li><a href="#" class="customerservice" alter="고객센터">고객센터 </a></li>
-                </ul>
-            
+                    <a href="#"><img src="../images/logo.png" alt="farmStory logo"></a>
+                </div><!-- .logo -->
+                 <ul class="utill">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul><!-- .utill -->
                 <div class="h_txt">
-                    <a href="#" class="topbanner">
-                        <img src="../images/head_txt_img.png" alt="3만원이상 무료배송 팜가드 10% 적립">
-                    </a>
-                </div>
-            </div>   <!--headerIn end-->
-            <nav class="gnb_wrap">
-                <ul class="gnb">
-                    <li><a href="#"><img src="../images/head_menu1.png" alt="팜스토리소개"></a></li>
-                    <li>
-                        <img src="../images/head_menu_badge.png" alt="30%" class="badge">
-                        <a href="#">
-                        <img src="../images/head_menu2.png" alt="장보기"></a></li>
-                    <li><a href="#"><img src="../images/head_menu3.png" alt="농작물 이야기"></a></li>
-                    <li><a href="#"><img src="../images/head_menu4.png" alt="이벤트"></a></li>
-                    <li><a href="#"><img src="../images/head_menu5.png" alt="커뮤니티"></a></li>
-                </ul>
-            </nav>
-        
-        </header>  <!--header end-->
+                    <img src="../images/head_txt_img.png" alt="3만원이상 무료배송·팜카드 10%적립">
+                </div><!-- .h_txt -->
+                <nav class="gnb_wrap">
+                    <ul class="gnb">
+                        <li><a href="#"><img src="../images/head_menu1.png" alt="팜스토리소개"></a></li>
+                        <li><a href="#">
+                            <img src="../images/head_menu_badge.png" alt="30%" class="discount"/>
+                            <img src="../images/head_menu2.png" alt="장보기">
+                        </a></li>
+                        <li><a href="#"><img src="../images/head_menu3.png" alt="농작물이야기"></a></li>
+                        <li><a href="#"><img src="../images/head_menu4.png" alt="이벤트"></a></li>
+                        <li><a href="#"><img src="../images/head_menu5.png" alt="커뮤니티"></a></li>
+                    </ul><!-- .gnb -->
+                </nav><!-- .gnb_wrap -->
+            </div><!-- .headerIn -->
+        </header><!-- #header -->
  
-        <main>
-            <section class="sub_bg">
-                <article>
-                    
-                            <img src="../images/sub_top_bg.jpg" alt="subTop background">
-                            <img src="../images/sub_top_tit1.png" alt="introduce" class="intro">
-                   
-                </article>
-            </section>
-         
-            <div class="mainIn">
-                <div id="aside">
-                    <aside>
-                        <article>
-                            <div class="sub_tit">
-                                <img src="../images/sub_aside_cate1_tit.png" alt="팜스토리 소개">
-                            </div>
-                            <div class="aside_container">
-                                <ul>
-                                    <li>
-                                        <a href="#" class="greeting">
-                                            <img src="../images/sub_cate1_lnb1.png" alt="인사말" >
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="dirction">
-                                            <img src="../images/sub_cate1_lnb2.png" alt="찾아오시는 길">
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </article>
-                    </aside>
-                </div> <!--aside end-->
-                <div id="article">
-                    <div class="a_top">
-
-                        <div class="a_top_tit"><img src="../images/sub_nav_tit_cate1_tit2.png" alt="찾아오시는 길"></div>
-                        <div>
-                            <ul class="sub_utill">
-                                <li>HOME</li>
-                                <li>팜스토리 소개</li>
-                                <li>찾아오시는길</li>
-                            </ul>
-                        </div>
-                        
-                    </div>
-                    <div>
-                      <ul>
-                        <li>
-                            <span class="direction txt1">팜스토리</span><br>
-                            <p>
-                                주소 : 경기도 이천시 잘한다구 신난다동 123<br>
-                                전화 : 010-2345-7890  
-                            </p>
-                        </li>
-                        <li>
-                            <span class="direction txt1">찾아오시는 길</span>
-                            <div class="map">
-                             map
-                            </div>
-                        </li>
-                      </ul>  
-    
-                    </div>
+        <main id="main cf">
+            <section class="mainIn cf">
+                <div class="sub_bg">
+                    <img src="../images/sub_top_tit5.png" alt="COMMUNITY" class="sub_tit">
                 </div>
-            </div> <!--mainin end-->
-        </main>
-
+                <aside class="aside">
+                    <div class="sidebar">
+                        <div class="aside_cate">
+                            <img src="../images/sub_aside_cate5_tit.png" alt="커뮤니티">
+                        </div><!-- .aside_cate -->
+                        <div class="aside_bg">
+                            <ul class="cate_lnb">
+                                <li> <a href="#">공지사항</a></li>
+                                <li> <a href="#">오늘의식단</a></li>
+                                <li> <a href="#">나도요리사</a></li>
+                                <li> <a href="#">1:1고객문의</a></li>
+                                <li> <a href="#">자주묻는질문</a></li>
+                            </ul><!-- .cate_lnb -->
+                        </div><!-- .aside_bg -->
+                    </div><!-- .sidebar -->
+                </aside><!-- .aside -->
+                
+                <article class="article">
+                    <div class="articleIn">
+                        <nav>
+                            <h2>
+                                <img src="../images/sub_nav_tit_cate1_tit2.png" alt="찾아오시는길">
+                            </h2>
+                            <p class="location">
+                                <img src="../images/sub_page_nav_ico.gif" alt="메뉴">
+                                <span>HOME </span>
+                                <span>팜스토리소개 </span>
+                                <strong>찾아오시는길</strong> 
+                            </p>
+                        </nav>
+                        <div class="direction">
+                            <ul>
+                                <li>
+                                    <span class="txt1">팜스토리</span><br>
+                                    <p>
+                                        주소 : 경기도 이천시 잘한다구 신난다동 123<br>
+                                        전화 : 010-2345-7890  
+                                    </p>
+                                </li>
+                                <li>
+                                    <span class="txt1">찾아오시는 길</span>
+                                    <div class="map">
+                                        map
+                                    </div>
+                                </li>
+                            </ul>  
+                        </div><!--direction -->
+                    </div><!-- .articleIn -->
+                </article><!-- .article -->
+            </section>
+        </main><!-- #main -->
         <!-- footer -->
          <footer>
             <div class="footerIn">
