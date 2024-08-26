@@ -1,0 +1,16 @@
+/* footer */
+#footer {width: 100%; height: auto;
+
+}
+
+.footerIn{width: 980px; height: 130px; margin: 0 auto;}
+.flogo {}
+
+
+
+footer > span:nth-child(2) {
+
+}
+
+footer > span:nth-child(3) {
+}
