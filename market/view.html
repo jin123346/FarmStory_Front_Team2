@@ -1,3 +1,403 @@
+---
+
+- 회원테이블
+
+```java
+*** 회원테이블 
+uid 아이디 (pk) VARCHAR(50) not null
+pass 비밀번호 CHAR(64) not null
+name이름 VARCHAR(10) not null
+nick 닉네임 VARCHAR(50)
+email 이메일 VARCHAR(100) not null
+hp 휴대폰 VARCHAR(20) not null
+zip 우편번호 VARCHAR(10) not null
+address1 기본주소 VARCHAR(255) not null
+address2 상세주소 VARCHAR(255) not null
+regdate 등록날짜 DATETIME DEFAULT CURRENT_TIMESTAMP
+
+*** 연결될 테이블
+장보기 > 주문정보 테이블 
+
+상품
+
+- 들어갈 컬럼
+-
+pNo 상품 번호 - int 기본키 auto_increment 
+cate 카테고리 - varchar(10) not null
+pName 상품명 - varchar(30) not null
+price 가격 - int not null
+stock 재고 - int not null
+point 포인트 - int not null
+discount 할인률 - int default 0 
+delivery 배송비 - int default 0 
+pListImgNo 상품목록 이미지 - 
+pBasicImgNo 기본정보 이미지 - 
+pDesImgNo 상품설명 이미지 - 
+rdate 등록일 - datetime not null
+etc 기타 - varchar(200)
+
+주문
+
+주문번호(orderNo)  pk auto-increment
+주문일(orderDate) datetime not null
+상품명(prodName) - not null
+판매가격(prodPrice)  - int, not null
+수량() - int not null
+주문자 - not null
+휴대폰 not null
+포인트사용
+받는분
+연락처
+배송주소
+결제방법
+기타
+
+주문 상품상세
+
+일련번호
+주문번호
+상품번호
+
+결제방법
+- paymentNo
+- paymentName
+
+파일
+
+-들어갈 컬럼
+-
+pNo 상품 번호 - int 기본키 auto_increment 
+- oName -
+상품목록 이미지 - 
+기본정보 이미지 - 
+상품설명 이미지 - 
+- sName -
+상품목록 이미지 - 
+기본정보 이미지 - 
+상품설명 이미지 - 
+rdate 등록일 - date not null 
+```
+
+```java
+
+/* main */
+
+.article h3:nth-of-type(1) {
+    width: 64.2px;
+    height: 17px;
+    margin-top: 41px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.36px;
+    text-align: left;
+}
+
+.product_info {
+    width: 762px;
+    height: 270px;
+}
+
+.product_info > img {
+    width: 240px;
+    height: 240px;
+    margin-top: 11px;
+}
+
+.product_details > table{
+    width: 457.19px;
+    height: 200px;
+    border-top: 2px solid #E7E7E7;
+    border-bottom: 2px solid #E7E7E7;
+    margin-top: -240px;
+    margin-left: 304px;
+}
+
+.product_details > table tr {
+    width: 453.19px;
+    height: 29.75px;
+}
+
+.product_details > table th {
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.52px;
+    text-align: left;
+
+}
+
+.product {
+    font-family: Inter;
+    font-size: 11.06px;
+    font-weight: 400;
+    line-height: 13.39px;
+    text-align: left;
+
+}
+
+.deliver {
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.52px;
+    text-align: left;
+
+}
+
+.deliver > span {
+    color: #777777;
+}
+
+.sell_price {
+    font-family: Inter;
+    font-size: 10.69px;
+    font-weight: 400;
+    line-height: 12.93px;
+    text-align: left;
+
+}
+
+input:focus{outline: none;}
+
+.count > input {
+    width: 64px;
+    height: 19px;
+    border-radius: 2.5px 2.5px 2.5px 2.5px;
+    border: 1px 0px 0px 0px;
+    border: 1px solid #767676;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.52px;
+    text-align: left; 
+}
+
+/* input 증가 감소 없애기  */
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+	  -webkit-appearance: none;
+	  margin: 0;
+}
+
+.sum {
+    font-family: Inter;
+    font-size: 9.94px;
+    font-weight: 700;
+    line-height: 12.03px;
+    text-align: left;
+    color: #C20A0A;
+
+}
+
+.add_to_cart {
+    width: 100px;
+    height: 40px;
+    display: block;
+    background: #769B0A;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: center;
+    color: #FFFFFF !important;
+    margin-left: 559px;
+    margin-top: 10px;
+}
+
+.buy_now {
+    width: 100px;
+    height: 40px;
+    display: block;
+    background: #960D1A;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: center;
+    color: #FFFFFF !important;
+    margin-left: 662px;
+    margin-top: -40px;
+}
+
+.article h3:nth-of-type(2) {
+    width: 64.2px;
+    height: 17px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.36px;
+    text-align: left;
+    margin-top: 13px;
+}
+
+.sample > img {
+    width: 750px;
+    height: 1387px;
+    margin-top: 16px;
+}
+
+.article h3:nth-of-type(3) {
+    width: 64.2px;
+    height: 17px;
+    margin-top: 15px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.36px;
+    text-align: left;
+}
+
+.sms {
+    width: 450px;
+    height: 14px;
+    margin-top: 14px;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.52px;
+    text-align: left;
+}
+
+.article h3:nth-of-type(4) {
+    width: 74px;
+    height: 17px;
+    margin-top: 13px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.36px;
+    text-align: left;
+    
+}
+
+.table_change {
+    width: 762px;
+    height: 150px;
+    margin-top: 13.5px;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.table_change tr:nth-of-type(1) > th {
+    width: 217.42px;
+    height: 93px;
+    border: 1px 1px 1px 0px;
+    padding: 10.5px 10px 10.5px 10.5px;
+    border-top: 1px;
+    border-style: solid;
+    border-color: #CCCCCC;
+    border-left: none; 
+}
+
+.table_change tr:nth-of-type(1) > td {
+    width: 544.58px;
+    height: 93px;
+    padding: 10.5px 10px 10.5px 10.5px;
+    border: 1px 0px 1px 1px;
+    border-top: 1px;
+    border-style: solid;
+    border-color: #CCCCCC;
+    border-right: none; 
+    padding-left: 24px;
+}
+
+.table_change tr:nth-of-type(2) > th {
+    width: 217.42px;
+    height: 57px;
+    border: 1px 1px 1px 0px;
+    padding: 10.5px 10px 10.5px 10.5px;
+    border-bottom: 1px;
+    border-style: solid;
+    border-color: #CCCCCC;
+    border-left: none; 
+}
+
+.table_change tr:nth-of-type(2) > td {
+    width: 544.58px;
+    height: 57px;
+    padding: 10.5px 10px 10.5px 10.5px;
+    border: 1px 0px 1px 1px;
+    border-bottom: 1px;
+    border-style: solid;
+    border-color: #CCCCCC;
+    border-right: none; 
+    padding-left: 24px;
+    
+}
+
+/* 푸터 영역 */
+/* footer  */
+footer{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+footer .ftlogo {
+   float: left;
+   margin-right: 70px;
+}
+
+.footerIn{
+    width: 980px;
+    height: 130px;
+    margin: 0 auto;
+    background: url(../images/footer_top_line.png) no-repeat;
+    background-position: top;
+}
+
+.footerIn *{
+    display: inline;
+    font-size: 12px;
+
+}
+
+.companyft {
+    display: block;
+    padding-top: 27px;
+}
+
+.ceoft{
+   display: block;
+
+}
+
+.Copy{
+    display: block;
+    padding-top: 0px;
+}
+
+.companyft li::after{
+    content: " /";
+
+}
+.companyft li:last-child::after{
+    content: "";
+}
+
+.ceoft li::after{
+    content: " /";
+}
+.ceoft li:last-child:after{
+    content: "";
+}
+
+/* copyright */
+.Copy {
+    text-align: justify;
+    padding-left: 243px; 
+    font-size: 12px; /* Font size */
+    color: #777; /* Text color */
+    font-weight: bold;
+}
+```
+
+```java
 
 <!DOCTYPE html>
 <html lang="ko">
@@ -5,16 +405,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>주문하기</title>
-    <!-- <link rel="shortcut icon" href="../images/fav.ico" type="image/x-icon"> -->
+    <link rel="shortcut icon" href="../images/fav.ico" type="image/x-icon"> 
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/style_market_view.css">
-    <!--  -->
 </head>
 <body>
     <div id="wrapper">
-    
         <header id="header">
             <div class="headerIn">
- 
                 <div class="logo">
                     <a href="#"><img src="../images/logo.png" alt="farmStory logo"></a>
                 </div><!-- .logo -->
@@ -50,20 +451,22 @@
         <main id="main">
             <section class="mainIn">
                 <div class="sub_bg">
-                    <img src="../images/sub_top_tit2.png" alt="MARKET">
+                    <img src="../images/sub_top_tit2.png" alt="MARKET" class="sub_tit">
                 </div>
-                 <aside class="sidebar">
-                    <nav>
-                      <h2>
-                        <img src="../images/sub_aside_cate2_tit.png" alt="장보기">
-                      </h2>
-                      <img src="../images/sub_aside_bg_lnb.png" alt="장보기배경">
-                      <ul>
-                        <li><a href="#"><img src="../images/sub_cate2_lnb1.png" alt="장보기"></a></li>
-                      </ul>
-                    </nav>
-                </aside> 
+                <aside class="aside">
+                    <div class="sidebar">
+                        <div class="aside_cate">
+                            <img src="../images/sub_aside_cate2_tit.png" alt="Buying in the Market 장보기">
+                        </div><!-- .aside_cate -->
+                        <div class="aside_bg">
+                            <ul class="cate_lnb">
+                                <li> <a href="#">장보기</a></li>
+                            </ul><!-- .cate_lnb -->
+                        </div><!-- .aside_bg -->
+                    </div><!-- .sidebar -->
+                </aside><!-- .aside -->
                 <article class="article">
+                    <div class="articleIn">
                     <nav>
                         <h2>
                             <img src="../images/sub_nav_tit_cate2_tit1.png" alt="장보기">
@@ -139,22 +542,50 @@
                                     신선 식품의 경우 단순히 마음에 들지 않는 경우<br>
                                     단순 변심으로 상품이 가치가 훼손돼서 판매가 어려운 경우
                                 </td>
+                    </table>
+                    </div><!-- .articleIn -->
                 </article>
             </section>
         </main><!-- #main -->
         
-        <!-- footer -->
-        <footer>
-            <img src="../images/footer_logo.png" alt="farmStory footer">
-            <span>(주)팜스토리 / 사업자등록번호 123-45-67890 / 통신판매업신고 제 2013-팜스토리구-123호 / 벤처기업확인 서울지방중소기업청 제 012345678-9-01234호<br>
-                등록번호 팜스토리01234 (2013.04.01) / 발행인 : 홍길동 <br>
-                대표 : 홍길동 / 이메일 : email@mail.mail / 전화 : 01) 234-5678 / 경기도 성남시 잘한다구 신난다동 345
-            </span>
-            <span>Copyright(C)홍길동 All rights reserved.</span>
-        </footer>
+         <!-- footer -->
+       <footer>
+        <div class="footerIn">--
+
+
+
+            
+            <div class="ftlogo">
+                <img src="../images/footer_logo.png" alt="farmstory footer logo">
+            </div>
+            <div class="companyft">
+                <ul>
+                    <li>(주)팜스토리</li>
+                    <li>사업3자등록번호 123-45-67890</li>
+                    <li>통신판매업신고 제 2013-팜스토리구-123호</li>
+                    <li>벤처기업확인 서울지방중소기업청 제 01234567-9-01234호 등록번호 팜스토리01234 (2013.04.01)</li>
+                    <li>발행인 : 홍길동</li>
+                </ul>
+            </div>
+            <div class="ceoft">
+                <ul>
+                    <li>대표 : 홍길동</li>
+                    <li>이메일 : email@mail.mail</li>
+                    <li>전화 : 01) 234-5678</li>
+                    <li>경기도 성남시 잘한다구 신난다동 345</li>
+                </ul>
+            </div>
+        
+            <div class="Copy">
+                <span>Copyright(c)홍길동 All right reserved.</span>
+            </div>
+        </div>
+     </footer>
+     <!-- footer end -->
         
 
     </div><!-- #wrapper -->
 </body>
 </html>
 
+```
