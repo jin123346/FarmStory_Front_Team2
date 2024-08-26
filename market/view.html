@@ -1,20 +1,20 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>주문하기</title>
-    <!-- <link rel="shortcut icon" href="../images/fav.ico" type="image/x-icon"> -->
+    <link rel="shortcut icon" href="../images/fav.ico" type="image/x-icon"> 
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/style_market_view.css">
-    <!--  -->
 </head>
 <body>
     <div id="wrapper">
-    
         <header id="header">
             <div class="headerIn">
- 
                 <div class="logo">
                     <a href="#"><img src="../images/logo.png" alt="farmStory logo"></a>
                 </div><!-- .logo -->
@@ -50,20 +50,22 @@
         <main id="main">
             <section class="mainIn">
                 <div class="sub_bg">
-                    <img src="../images/sub_top_tit2.png" alt="MARKET">
+                    <img src="../images/sub_top_tit2.png" alt="MARKET" class="sub_tit">
                 </div>
-                 <aside class="sidebar">
-                    <nav>
-                      <h2>
-                        <img src="../images/sub_aside_cate2_tit.png" alt="장보기">
-                      </h2>
-                      <img src="../images/sub_aside_bg_lnb.png" alt="장보기배경">
-                      <ul>
-                        <li><a href="#"><img src="../images/sub_cate2_lnb1.png" alt="장보기"></a></li>
-                      </ul>
-                    </nav>
-                </aside> 
+                <aside class="aside">
+                    <div class="sidebar">
+                        <div class="aside_cate">
+                            <img src="../images/sub_aside_cate2_tit.png" alt="Buying in the Market 장보기">
+                        </div><!-- .aside_cate -->
+                        <div class="aside_bg">
+                            <ul class="cate_lnb">
+                                <li> <a href="#">장보기</a></li>
+                            </ul><!-- .cate_lnb -->
+                        </div><!-- .aside_bg -->
+                    </div><!-- .sidebar -->
+                </aside><!-- .aside -->
                 <article class="article">
+                    <div class="articleIn">
                     <nav>
                         <h2>
                             <img src="../images/sub_nav_tit_cate2_tit1.png" alt="장보기">
@@ -139,22 +141,44 @@
                                     신선 식품의 경우 단순히 마음에 들지 않는 경우<br>
                                     단순 변심으로 상품이 가치가 훼손돼서 판매가 어려운 경우
                                 </td>
+                    </table>
+                    </div><!-- .articleIn -->
                 </article>
             </section>
         </main><!-- #main -->
         
-        <!-- footer -->
-        <footer>
-            <img src="../images/footer_logo.png" alt="farmStory footer">
-            <span>(주)팜스토리 / 사업자등록번호 123-45-67890 / 통신판매업신고 제 2013-팜스토리구-123호 / 벤처기업확인 서울지방중소기업청 제 012345678-9-01234호<br>
-                등록번호 팜스토리01234 (2013.04.01) / 발행인 : 홍길동 <br>
-                대표 : 홍길동 / 이메일 : email@mail.mail / 전화 : 01) 234-5678 / 경기도 성남시 잘한다구 신난다동 345
-            </span>
-            <span>Copyright(C)홍길동 All rights reserved.</span>
-        </footer>
+         <!-- footer -->
+       <footer>
+        <div class="footerIn">
+            <div class="ftlogo">
+                <img src="../images/footer_logo.png" alt="farmstory footer logo">
+            </div>
+            <div class="companyft">
+                <ul>
+                    <li>(주)팜스토리</li>
+                    <li>사업3자등록번호 123-45-67890</li>
+                    <li>통신판매업신고 제 2013-팜스토리구-123호</li>
+                    <li>벤처기업확인 서울지방중소기업청 제 01234567-9-01234호 등록번호 팜스토리01234 (2013.04.01)</li>
+                    <li>발행인 : 홍길동</li>
+                </ul>
+            </div>
+            <div class="ceoft">
+                <ul>
+                    <li>대표 : 홍길동</li>
+                    <li>이메일 : email@mail.mail</li>
+                    <li>전화 : 01) 234-5678</li>
+                    <li>경기도 성남시 잘한다구 신난다동 345</li>
+                </ul>
+            </div>
+        
+            <div class="Copy">
+                <span>Copyright(c)홍길동 All right reserved.</span>
+            </div>
+        </div>
+     </footer>
+     <!-- footer end -->
         
 
     </div><!-- #wrapper -->
 </body>
 </html>
-
