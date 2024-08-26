@@ -1,8 +1,9 @@
 /* header, footer 제외 공통부분 = common */
 
 /* main */
-#main{width: 100%; height: auto; position: relative; }
-.mainIn{width: 980px; margin:0 auto;}
+#main{width: 100%; height: auto; position: relative;}
+.mainIn{width: 980px; margin:0 auto; }
+.cf::after {content: ""; display: block; clear: both;}
 
 /* 서브 이미지 */
 .sub_bg{position: relative; width: 980px; height: 184px; background: url('../images/sub_top_bg.jpg') no-repeat center;}
