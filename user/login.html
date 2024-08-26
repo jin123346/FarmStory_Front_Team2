@@ -2,57 +2,76 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-     <link rel="stylesheet" href="../css/style_user.css">
+    <link rel="shortcut icon" href="../images/fav.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/user/login.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <!-- 
-         날짜 : 2024/08/16
-         이름 : 하진희
-         작업 내용
-         - 2024/08/16
+        작업내용 
+        2024/08/26  하진희 login html, css update
     -->
 </head>
 <body>
     <div id="wrapper">
 
-        <header>
+        <header id="header">
             <div class="headerIn">
                 <div class="logo">
-                    <a href="#">
-                        <img src="../images/logo.png" alt="logo">
-                    </a>
-                </div>
-             
-                <ul class="utill">
-                    <li><a href="#" class="Home" alter="홈">HOME | </a></li>
-                    <li><a href="#" class="login" alter="로그인">로그인 |</a></li>
-                    <li><a href="#" class="enroll" alter="회원가입">회원가입 |</a></li>
-                    <li><a href="#" class="customerservice" alter="고객센터">고객센터 </a></li>
-                </ul>
-            
+                    <a href="#"><img src="../images/logo.png" alt="farmStory logo"></a>
+                </div><!-- .logo -->
+                 <ul class="utill">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul><!-- .utill -->
                 <div class="h_txt">
-                    <a href="#" class="topbanner">
-                        <img src="../images/head_txt_img.png" alt="3만원이상 무료배송 팜가드 10% 적립">
-                    </a>
-                </div>
-            </div>   <!--headerIn end-->
-            <nav class="gnb_wrap">
-                <ul class="gnb">
-                    <li><a href="#"><img src="../images/head_menu1.png" alt="팜스토리소개"></a></li>
-                    <li>
-                        <img src="../images/head_menu_badge.png" alt="30%" class="badge">
-                        <a href="#">
-                        <img src="../images/head_menu2.png" alt="장보기"></a></li>
-                    <li><a href="#"><img src="../images/head_menu3.png" alt="농작물 이야기"></a></li>
-                    <li><a href="#"><img src="../images/head_menu4.png" alt="이벤트"></a></li>
-                    <li><a href="#"><img src="../images/head_menu5.png" alt="커뮤니티"></a></li>
-                </ul>
-            </nav>
-        </header>  <!--header end-->
+                    <img src="../images/head_txt_img.png" alt="3만원이상 무료배송·팜카드 10%적립">
+                </div><!-- .h_txt -->
+                <nav class="gnb_wrap">
+                    <ul class="gnb">
+                        <li><a href="#"><img src="../images/head_menu1.png" alt="팜스토리소개"></a></li>
+                        <li><a href="#">
+                            <img src="../images/head_menu_badge.png" alt="30%" class="discount"/>
+                            <img src="../images/head_menu2.png" alt="장보기">
+                        </a></li>
+                        <li><a href="#"><img src="../images/head_menu3.png" alt="농작물이야기"></a></li>
+                        <li><a href="#"><img src="../images/head_menu4.png" alt="이벤트"></a></li>
+                        <li><a href="#"><img src="../images/head_menu5.png" alt="커뮤니티"></a></li>
+                    </ul><!-- .gnb -->
+                </nav><!-- .gnb_wrap -->
+            </div><!-- .headerIn -->
+        </header><!-- #header -->
+
  
         <main>
             <div class="mainIn">
-                <p></p>
+                <section class="login">
+                    <form action="#">
+                        <table border="0">
+                            <tr>
+                                <td><img src="../images/login_ico_id.png" alt="아이디"></td>
+                                <td><input type="text" name="uid" placeholder="아이디 입력"></td>
+                            </tr>
+                            <tr>
+                                <td><img src="../images/login_ico_pw.png" alt="비밀번호"></td>
+                                <td><input type="password" name="pass" placeholder="비밀번호 입력"></td>
+                            </tr>
+                        </table>
+                        <input type="submit" value="로그인" class="btnLogin">
+                    </form>
+                    <div>
+                        <h3>회원 로그인 안내</h3>
+                        <p>
+                            아직 회원이 아니시면 회원으로 가입하세요.
+                        </p>
+                        <a href="#">회원가입</a>
+                    </div>
+                </section>
             </div>
         </main>
 
