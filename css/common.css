@@ -1,5 +1,5 @@
 /* header, footer 제외 공통부분 = common */
-
+.cf::after {content: ""; display: block; clear: both;}
 /* main */
 
 #main{width: 100%; height: auto; position: relative;}
