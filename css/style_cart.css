@@ -76,33 +76,27 @@ header {
 
 .navmenu {
     background: url(../images/head_menu_line.png) no-repeat;
-    background-position-y: -3px;
 }
 
 .menu > li:nth-child(1) > a:hover {
     content: url(../images/head_menu1_ov.png);
     background: url(../images/head_menu_line.png) no-repeat;
-    background-position-y: -8px;
 }
 .menu > li:nth-child(2) > a:hover {
     content: url(../images/head_menu2_ov.png);
     background: url(../images/head_menu_line.png) no-repeat;
-    background-position-y: -8px;
 }
 .menu > li:nth-child(3) > a:hover {
     content: url(../images/head_menu3_ov.png);
     background: url(../images/head_menu_line.png) no-repeat;
-    background-position-y: -8px;
 }
 .menu > li:nth-child(4) > a:hover {
     content: url(../images/head_menu4_ov.png);
     background: url(../images/head_menu_line.png) no-repeat;
-    background-position-y: -8px;
 }
 .menu > li:nth-child(5) > a:hover {
     content: url(../images/head_menu5_ov.png);
     background: url(../images/head_menu_line.png) no-repeat;
-    background-position-y: -8px;
 }
 /* 30% 이미지 */
 .discount {
