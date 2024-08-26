@@ -14,7 +14,6 @@
 
 .aside_bg .cate_lnb1 li .lnb2:hover{background: url('../../images/sub_cate1_lnb2_ov.png') no-repeat; }
 
-
 .txt {
     width: 760px;
     color: #666;
@@ -22,11 +21,9 @@
     line-height: 20px;
 }
 
-.content {
-    margin-top: 40px;
-}
+.content {margin-top: 40px;}
 
 .txt strong{color:#91BA15; font-weight: bold;}
 
-.txt{
- margin: 14px 0 0 0; }
+.txt{margin: 14px 0 0 0; }
+
