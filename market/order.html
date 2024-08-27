@@ -134,13 +134,13 @@
                         <h4 class="order_tit">주문정보 입력</h4>
                         <table class="order_tb cf">
                             <colgroup>
-                                <col style="width: 50%">
-                                <col style="width: 50%">
+                                <col style="width: 23.52%">
+                                <col style="width: 76.48%">
                             </colgroup>
                             <tr>
                                 <th>주문자</th>
                                 <td>
-                                    <input type="text" class="custId" placeholder="홍길동">
+                                    <input type="text" class="uid" placeholder="홍길동">
                                 </td>
                             </tr>
                             <tr>
@@ -149,12 +149,12 @@
                                     <input type="text" class="hp" placeholder="010-1234-1001">
                                 </td>
                             </tr>
-                            <tr>
+                            <tr class="use cf">
                                 <th>포인트사용</th>
-                                <td>
-                                    <input type="text" class="hp" placeholder="">
-                                    <a href="#">사용하기</a>
-                                    <p>사용가능 2,000</p>
+                                <td class="use_point cf">
+                                    <input type="text" class="point" placeholder="">
+                                    <a href="#" class="point_btn">사용하기</a><br>
+                                    <div>사용가능 2,000</div>
                                 </td>
                             </tr>
                             <tr>
@@ -167,24 +167,26 @@
                             </tr>
                             <tr>
                                 <th class="delivery_addr">배송주소</th>
-                                <td>
-                                    <input type="text" class="post_search" placeholder="" title="우편번호 검색칸">
-                                    <a href="#"><img src="../images/btn_post_search.gif" alt="우편번호 검색" class="btn_form">우편번호 검색</a>
+                                <td class="cf">
+                                    <input type="text" class="post_sch" placeholder="" title="우편번호 검색칸">
+                                    <a href="#"><img src="../images/btn_post_search.gif" alt="우편번호 검색" class="post_sch_btn"></a>
+                                    <input type="text" class="addr1" placeholder="기본주소 검색">
+                                    <input type="text" class="addr2" placeholder="상세주소 입력">
                                 </td>
-                                <td>
-                                    <p><input type="text" class="" placeholder="기본주소 검색"></p>
-                                    <p><input type="text" class="" placeholder="상세주소 입력"></p>
-                               </td>
                             </tr>
                             <tr>
                                 <th>결제방법</th>
-                                <td><input type="checkbox" class="" placeholder="" value="">계좌이체</td>
-                                <td><input type="checkbox" class="" placeholder="" value="">신용카드</td>
-                                <td><input type="checkbox" class="" placeholder="" value="">체크카드</td>
-                                <td><input type="checkbox" class="" placeholder="" value="">휴대폰</td>
+                                <td>
+                                    <input type="checkbox" id="check"><label for="check"></label>
+                                    계좌이체
+                                    <!-- <input type="checkbox" class="" placeholder="" value="">계좌이체 -->
+                                    <input type="checkbox" class="" placeholder="" value="">신용카드
+                                    <input type="checkbox" class="" placeholder="" value="">체크카드
+                                    <input type="checkbox" class="" placeholder="" value="">휴대폰
+                                </td>
                             </tr> 
                             <tr>
-                                <th>기타</th>
+                                <th class="etc">기타</th>
                                 <td><input type="textarea" class="" placeholder=""></td>
                             </tr>
                         </table>
