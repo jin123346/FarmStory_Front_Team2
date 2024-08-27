@@ -3,7 +3,6 @@
 #footer{width: 100%; height: auto; }
 .footerIn{width: 980px; height: 130px; margin: 0 auto; background: url('../images/footer_top_line.png') 0 -4px no-repeat;}
 
-.cf::after {content: ""; display: block; clear: both;}
 .flogo{float: left; width: 174px; height: 64px; margin-top: 1px;}
 .finfo{float: right; width: 720.68px; margin:27px 15.8px 0 0;}
 .tel{color: #585858; font-size: 10.83px; line-height: 18px; letter-spacing: -0.3px;}
